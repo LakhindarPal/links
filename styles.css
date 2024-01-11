@@ -1,30 +1,39 @@
 body {
   font-family: system-ui, -apple-system, 'Segoe UI', Ubuntu, Roboto, sans-serif;
-  background-color: #9480ff;
   background: fixed linear-gradient(0deg, #d7f5ef, #9480ff);
   text-align: center;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header,
+header a,
+#controls,
+input,
+select,
+section {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 8px;
 }
 
 header a {
-  text-decoration: none;
   display: block;
-  border-radius: 8px;
-  border: 1px solid #000;
   width: 50%;
+  text-decoration: none;
   margin: 10px auto;
-  padding: 10px;
   text-align: center;
+  transition: color 0.3s ease-in-out;
+}
+
+header a:hover {
+  color: dodgerblue;
 }
 
 header a span {
   font-weight: bold;
-}
-
-header {
-  border: 1px solid #000;
-  border-radius: 8px;
-  margin: 10px;
 }
 
 header img {
@@ -47,7 +56,6 @@ header img {
   }
 }
 
-
 h1 {
   background: linear-gradient(to right, #ff5555, #5555ff);
   background-clip: text;
@@ -60,6 +68,30 @@ header p {
   color: #fff;
 }
 
+input {
+  width: 40vw;
+  transition: width 0.4s ease-in-out;
+  box-sizing: border-box;
+  margin: 10px auto;
+}
+
+input:focus {
+  width: calc(100vw - 40px);
+}
+
+select {
+  cursor: pointer;
+}
+
+input:hover,
+select:hover,
+input:focus,
+select:focus,
+input:active,
+select:active {
+  border-color: dodgerblue;
+}
+
 main {
   display: flex;
   flex-wrap: wrap;
@@ -69,18 +101,10 @@ main {
 section {
   flex: 1;
   margin: 10px;
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #000;
-}
-
-h3 {
-  /**/
 }
 
 ul {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   list-style: none;
   border-radius: 8px;
@@ -91,7 +115,7 @@ ul {
 
 ul:hover {
   transform: scale(1.05);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2)
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 li {
