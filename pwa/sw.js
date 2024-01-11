@@ -1,13 +1,16 @@
-// Specify what we want added to the cache for offline use
+// cache for offline use
 self.addEventListener("install", e => {
   e.waitUntil(
-    caches.open("lp-links-cache").then(cache => {
+    caches.open("lp-cache-v2.0.0").then(cache => {
       return cache.addAll([
         "/",
         "/index.html",
-        "/style.css",
+        "/success.html",
+        "/styles.css",
+        "/main.js",
         "/logos",
-        "/pics",
+        "/icons",
+        "/pics"
       ]);
     })
   );

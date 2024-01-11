@@ -4,49 +4,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore my link tree for quick access to my social profiles">
+  <meta name="description" content="Explore the links for quick access to my social profiles.">
   <meta name="author" content="Lakhindar Pal">
-  <meta name="keywords" content="link tree, social profiles, portfolio, links">
-  <!-- Open Graph tags for social sharing -->
-  <meta property="og:title" content="Lakhindar Pal - Link Tree">
-  <meta property="og:description" content="Explore my link tree for quick access to my social profiles.">
-  <meta property="og:image" content="pics/avatar.jpg">
+
+  <!-- Open Graph tags -->
+  <meta property="og:title" content="Lakhindar Pal - Links">
+  <meta property="og:description" content="Explore the links for quick access to my social profiles.">
+  <meta property="og:image" content="icons/avatar-1200x630.png">
   <meta property="og:url" content="https://lakhindar.is-a-good.dev">
 
-  <!-- Twitter Card tags for Twitter sharing -->
+  <!-- Twitter Card tags -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@lakhindarpal">
-  <meta name="twitter:title" content="Lakhindar Pal - Link Tree">
-  <meta name="twitter:description" content="Explore my link tree for quick access to my social profiles.">
-  <meta name="twitter:image" content="pics/avatar.jpg">
+  <meta name="twitter:title" content="Lakhindar Pal - Links">
+  <meta name="twitter:description" content="Explore the links for quick access to my social profiles.">
+  <meta name="twitter:image" content="icons/avatar-1200x630.png">
 
-  <title>Lakhindar Pal - Link Tree</title>
+  <title>Lakhindar Pal - Links</title>
 
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="style.css">
-
-  <!-- Android Chrome Icons -->
-  <link rel="icon" sizes="192x192" href="pics/android-chrome-192x192.png">
-  <link rel="icon" sizes="512x512" href="pics/android-chrome-512x512.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
 
   <!-- Apple Touch Icon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="pics/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-touch-icon-152x152.png">
+
+  <!-- Android Chrome Icons -->
+  <link rel="icon" sizes="192x192" href="icons/android-chrome-192x192.png">
+  <link rel="icon" sizes="512x512" href="icons/android-chrome-512x512.png">
 
   <!-- Favicon.ico -->
-  <link rel="icon" type="image/x-icon" href="pics/favicon.ico">
-  <link rel="icon" type="image/png" sizes="16x16" href="pics/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="pics/favicon-32x32.png">
-  <link rel="icon" type="image/x-icon" sizes="48x48" href="pics/favicon-48x48.png">
+  <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
 
-  <!-- Theme Color -->
+  <!-- Microsoft Tile Icons -->
+  <meta name="msapplication-TileImage" content="icons/mstile-70x70.png">
+  <meta name="msapplication-TileImage" content="icons/mstile-150x150.png">
+  <meta name="msapplication-TileImage" content="icons/mstile-310x310.png">
+  <meta name="msapplication-TileColor" content="#3498db">
+
+  <!-- Safari Pinned Tab Icon -->
+  <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#3498db">
+
   <meta name="theme-color" content="#3498db">
-  <!-- Content Language -->
   <meta http-equiv="Content-Language" content="en">
 
-  <!-- PWA setup -->
   <link rel="manifest" href="pwa/manifest.json">
+  <meta name="msapplication-config" content="pwa/browserconfig.xml" />
+
   <script>
-    if (location.protocol == "http:") location.protocol = "https:";
     if ("serviceWorker" in navigator) {
       navigator.serviceWorker
         .register("pwa/sw.js")
@@ -61,59 +68,179 @@
 </head>
 
 <body>
-  <main>
-    <img src="pics/avatar.jpg" alt="LP" id="avatar">
+  <header>
+    <img src="icons/avatar-original.jpg" alt="Avatar">
     <h1>Lakhindar Pal</h1>
-    <p id="tagline">Web developer from India 🇮🇳</p>
-    </>
-    <nav id="navigation">
-      <a href="/" target="_blank" rel="noopener">Website</a>
-      <a href="/blog" target="_blank" rel="noopener">Blog</a>
-      <a href="/projects" target="_blank" rel="noopener">Projects</a>
-    </nav>
-    <hr>
-    <div id="container">
-      <a href="https://www.facebook.com/" target="_blank" rel="noopener"><img src="logos/Facebook_icon_2021.svg" alt="Facebook"></a>
-      <a href="https://www.instagram.com/" target="_blank" rel="noopener"><img src="logos/Instagram_logo_2022.svg" alt="Instagram"></a>
-      <a href="https://twitter.com/" target="_blank" rel="noopener"><img src="logos/X_logo_2023_original.svg" alt="Twitter"></a>
-      <a href="https://snapchat.com/" target="_blank" rel="noopener"><img src="logos/Snapchat_logo.svg" alt="Snapchat"></a>
-      <a href="https://reddit.com/u/LakhindarPal" target="_blank" rel="noopener"><img src="logos/Reddit_Logo_Icon.svg" alt="Reddit"></a>
-      <a href="https://mastodon.social/@LakhindarPal" target="_blank" rel="noopener"><img src="logos/mastodon-icon.svg" alt="Mastodon"></a>
+    <p>Noob Developer</p>
+    <a href="https://lakhindar.is-a.dev" target="_blank">Visit <span>Portfolio</span></a>
+  </header>
 
-      <a href="https://discord.gg/" target="_blank" rel="noopener"><img src="logos/discord_blurple_RGB.svg" alt="Discord"></a>
-      <a href="https://twitch.tv/LakhindarPal" target="_blank" rel="noopener"><img src="logos/twitch_purple.svg" alt="Twitch"></a>
-      <a href="https://youtube.com/" target="_blank" rel="noopener"><img src="logos/YouTube_color_icon_2017.svg" alt="YouTube"></a>
+  <main>
+    <!-- Social Media -->
+    <section>
+      <h3>Social Media</h3>
+      <ul>
+        <li><a href="https://www.facebook.com" target="_blank"><img src="logos/facebook.svg" alt="Facebook"></a></li>
+        <li><a href="https://www.instagram.com" target="_blank"><img src="logos/instagram.svg" alt="Instagram"></a></li>
+        <li><a href="https://www.pinterest.com" target="_blank"><img src="logos/pinterest.svg" alt="Pinterest"></a></li>
+      </ul>
+    </section>
 
-      <a href="https://dev.to/LakhindarPal" target="_blank" rel="noopener"><img src="logos/dev-to_logo.svg" alt="Dev"></a>
-      <a href="https://lakhindarpal.medium.com" target="_blank" rel="noopener"><img src="logos/medium_dark_icon.svg" alt="Medium"></a>
-      <a href="https://lakhindarpal.substack.com/" target="_blank" rel="noopener"><img src="logos/substack-icon.svg" alt="Substack"></a>
-      <a href="https://lakhindarpal.hashnode.dev" target="_blank" rel="noopener"><img src="logos/hashnode_icon.svg" alt="Hashnode"></a>
+    <!-- Conversation -->
+    <section>
+      <h3>Conversation</h3>
+      <ul>
+        <li><a href="https://twitter.com" target="_blank"><img src="logos/twitter-x.svg" alt="Twitter"></a></li>
+        <li><a href="https://hachyderm.io/@LakhindarPal" target="_blank"><img src="logos/mastodon.svg" alt="Mastodon"></a></li>
+        <li><a href="https://www.kooapp.com/profile/LakhindarPal" target="_blank"><img src="logos/kooapp.svg" alt="Kooapp"></a></li>
+        <li><a href="https://www.threads.net/" target="_blank"><img src="logos/threads.svg" alt="Threads"></a></li>
+      </ul>
+    </section>
 
-      <a href="https://linkedin.com/in/LakhindarPal" target="_blank" rel="noopener"><img src="logos/linkedIn-original.svg" alt="Reddit"></a>
-      <a href="mailto:dev.lakhindarpal@gmail.com" target="_blank" rel="noopener"><img src="logos/Circle-icons-email.svg" alt="E-mail"></a>
+    <!-- Community -->
+    <section id="community">
+      <h3>Community</h3>
+      <ul>
+        <li><a href="https://discord.com" target="_blank"><img src="logos/discord.svg" alt="Discord"></a></li>
+        <li><a href="https://www.telegram.com" target="_blank"><img src="logos/telegram.svg" alt="Telegram"></a></li>
+        <li><a href="https://reddit.com/user/LakhindarPal/" target="_blank"><img src="logos/reddit.svg" alt="Reddit"></a></li>
+        <li><a href="https://lakhindarpal.tumblr.com/" target="_blank"><img src="logos/tumblr.svg" alt="Tumblr"></a></li>
+      </ul>
+    </section>
 
-      <a href="https://www.quora.com/" target="_blank" rel="noopener"><img src="logos/Quora_icon.svg" alt="Quora"></a>
-      <a href="https://stackoverflow.com/" target="_blank" rel="noopener"><img src="logos/Stack_Overflow_icon.svg" alt="Stack Overflow"></a>
+    <!-- Professional network-->
+    <section id="professional">
+      <h3>Professional</h3>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/lakhindarpal" target="_blank"><img src="logos/linkedin.svg" alt="LinkedIn"></a></li>
+        <li><a href="mailto:hello@lakhindar.is-a.dev" target="_blank"><img src="logos/email.svg" alt="Email"></a></li>
+        <li><a href="https://www.behance.net/lakhindarpal" target="_blank"><img src="logos/behance.svg" alt="Behance"></a></li>
+      </ul>
+    </section>
 
-      <a href="https://www.npmjs.com/~lakhindarpal" target="_blank" rel="noopener"><img src="logos/npm-original-wordmark.svg" alt="NPM"></a>
-      <a href="https://github.com/LakhindarPal" target="_blank" rel="noopener"><img src="logos/github-original.svg" alt="Github"></a>
-      <a href="https://gitlab.com/LakhindarPal" target="_blank" rel="noopener"><img src="logos/gitlab-original.svg" alt="Gitlab"></a>
-      <a href="https://bitbucket.com/LakhindarPal" target="_blank" rel="noopener"><img src="logos/bitbucket-original.svg" alt="Bitbucket"></a>
-      <a href="https://glitch.com/@LakhindarPal" target="_blank" rel="noopener"><img src="logos/Glitch_company_logo.svg" alt="Glitch"></a>
-      <a href="https://replit.com/@LakhindarPal" target="_blank" rel="noopener"><img src="logos/New_Replit_Logo.svg" alt="Replit"></a>
-      <a href="https://codepen.io/LakhindarPal" target="_blank" rel="noopener"><img src="logos/codepen-plain.svg" alt="Codepen"></a>
-      <a href="https://codesandbox.io/u/LakhindarPal" target="_blank" rel="noopener"><img src="logos/CodeSandbox_Square_Logo.svg" alt="CodeSandBox"></a>
-      <a href="https://stackblitz.com/@LakhindarPal" target="_blank" rel="noopener"><img src="logos/stackblitz-icon.svg" alt="Stackblitz"></a>
+    <!-- Blogging Platforms -->
+    <section id="blogs">
+      <h3>Blogging</h3>
+      <ul>
+        <li><a href="https://lakhindarpal.medium.com/" target="_blank"><img src="logos/medium.svg" alt="Medium"></a></li>
+        <li><a href="https://lakhindarpal.blogspot.com/" target="_blank"><img src="logos/blogger.svg" alt="Blogger"></a></li>
+        <li><a href="https://lakhindarpal.substack.com/" target="_blank"><img src="logos/substack.svg" alt="Substack"></a></li>
+        <li><a href="https://lakhindarpal.hashnode.dev/" target="_blank"><img src="logos/hashnode.svg" alt="Hashnode"></a></li>
+        <li><a href="https://dev.to/lakhindarpal" target="_blank"><img src="logos/dev-to.svg" alt="Dev.to"></a></li>
+      </ul>
+    </section>
 
-      <a href="https://ko-fi.com/LakhindarPal" target="_blank" rel="noopener"><img src="logos/ko-fi_icon.svg" alt="Ko-fi"></a>
-      <a href="https://patreon.com/LakhindarPal" target="_blank" rel="noopener"><img src="logos/patreon_icon.svg" alt="Patreon"></a>
-      <a href="https://buymeacoffee.com/LakhindarPal" target="_blank" rel="noopener"><img src="logos/buy-me-a-coffee_icon.svg" alt="Buy Me A Coffee"></a>
-    </div>
+    <!-- Video Platforms -->
+    <section id="videos">
+      <h3>Videos</h3>
+      <ul>
+        <li><a href="https://www.youtube.com" target="_blank"><img src="logos/youtube.svg" alt="YouTube"></a></li>
+        <li><a href="https://www.twitch.tv/lakhindarpal" target="_blank"><img src="logos/twitch.svg" alt="Twitch"></a></li>
+        <li><a href="https://kick.com/LakhindarPal" target="_blank"><img src="logos/kick.svg" alt="Kick"></a></li>
+        <li><a href="https://vimeo.com/lakhindarpal" target="_blank"><img src="logos/vimeo.svg" alt="Vimeo"></a></li>
+      </ul>
+    </section>
+
+    <!-- Version Control -->
+    <section id="projects">
+      <h3>Projects</h3>
+      <ul>
+        <li><a href="https://github.com/LakhindarPal" target="_blank"><img src="logos/github.svg" alt="GitHub"></a></li>
+        <li><a href="https://gitlab.com/LakhindarPal" target="_blank"><img src="logos/gitlab.svg" alt="GitLab"></a></li>
+        <li><a href="https://bitbucket.com/LakhindarPal" target="_blank"><img src="logos/bitbucket.svg" alt="Bitbucket"></a></li>
+        <li><a href="https://gitea.com/LakhindarPal" target="_blank"><img src="logos/gitea.svg" alt="Gitea"></a></li>
+        <li><a href="https://www.npmjs.com/~lakhindarpal" target="_blank"><img src="logos/npmjs.svg" alt="NPM"></a></li>
+      </ul>
+    </section>
+
+    <!-- Coding Playgrounds -->
+    <section id="playgrounds">
+      <h3>Playgrounds</h3>
+      <ul>
+        <li><a href="https://glitch.com/@LakhindarPal" target="_blank"><img src="logos/glitch.svg" alt="Glitch"></a></li>
+        <li><a href="https://replit.com/@LakhindarPal" target="_blank"><img src="logos/replit.svg" alt="Replit"></a></li>
+        <li><a href="https://codepen.io/LakhindarPal" target="_blank"><img src="logos/codepen.svg" alt="Codepen"></a></li>
+        <li><a href="https://codesandbox.io/u/LakhindarPal" target="_blank"><img src="logos/codesandbox.svg" alt="Codesandbox"></a></li>
+        <li><a href="https://stackblitz.com/@LakhindarPal" target="_blank"><img src="logos/stackblitz.svg" alt="StackBlitz"></a></li>
+      </ul>
+    </section>
+
+    <!-- Development-->
+    <section id="development">
+      <h3>Development</h3>
+      <ul>
+        <li><a href="https://hub.docker.com/u/lakhindarpal" target="_blank"><img src="logos/docker.svg" alt="Docker"></a></li>
+        <li><a href="https://connect.symfony.com/profile/lakhindarpal" target="_blank"><img src="logos/symfony.svg" alt="Symfony"></a></li>
+      </ul>
+    </section>
+
+    <!-- Query Resolver-->
+    <section id="query">
+      <h3>Query resolver</h3>
+      <ul>
+        <li><a href="https://stackoverflow.com" target="_blank"><img src="logos/stack-overflow.svg" alt="Stack Overflow"></a></li>
+        <li><a href="https://www.quora.com" target="_blank"><img src="logos/quora.svg" alt="Quora"></a></li>
+      </ul>
+    </section>
+
+    <!-- Product Discovery/Indie Development -->
+    <section id="innovation">
+      <h3>Innovation Hub</h3>
+      <ul>
+        <li><a href="https://www.producthunt.com/@lakhindarpal" target="_blank"><img src="logos/producthunt.svg" alt="ProductHunt"></a></li>
+        <li><a href="https://www.indiehackers.com/LakhindarPal" target="_blank"><img src="logos/indiehackers.svg" alt="IndieHackers"></a></li>
+        <li><a href="https://huggingface.co/LakhindarPal" target="_blank"><img src="logos/huggingface.svg" alt="Hugging Face"></a></li>
+        <li><a href="https://hackaday.io/LakhindarPal" target="_blank"><img src="logos/hackaday.svg" alt="Hackaday"></a></li>
+      </ul>
+    </section>
+
+    <!-- Data Science/Programming Practice -->
+    <section id="programming">
+      <h3>Programming</h3>
+      <ul>
+        <li><a href="https://www.kaggle.com/lakhindarpal" target="_blank"><img src="logos/kaggle.svg" alt="Kaggle"></a></li>
+        <li><a href="https://leetcode.com/LakhindarPal/" target="_blank"><img src="logos/leetcode.svg" alt="LeetCode"></a></li>
+        <li><a href="https://www.hackerrank.com/profile/LakhindarPal" target="_blank"><img src="logos/hackerrank.svg" alt="HackerRank"></a></li>
+      </ul>
+    </section>
+
+    <!-- Anime/Manga Lists -->
+    <section id="anime">
+      <h3>Anime Lists</h3>
+      <ul>
+        <li><a href="https://myanimelist.net/profile/LakhindarPal" target="_blank"><img src="logos/myanimelist.svg" alt="MyAnimeList"></a></li>
+        <li><a href="https://anilist.co/user/LakhindarPal/" target="_blank"><img src="logos/anilist.svg" alt="AniList"></a></li>
+        <li><a href="https://kitsu.io/users/LakhindarPal" target="_blank"><img src="logos/kitsu.svg" alt="Kitsu"></a></li>
+      </ul>
+    </section>
+
+    <!-- Music Playlists -->
+    <section id="music">
+      <h3>Playlists</h3>
+      <ul>
+        <li><a href="https://music.amazon.in/profiles/yolsv5wzpwpm7zfkn5xettwrsm" target="_blank"><img src="logos/amazon-music.svg" alt="Amazon music"></a></li>
+        <li><a href="https://soundcloud.com/lakhindarpal" target="_blank"><img src="logos/soundcloud.svg" alt="SoundCloud"></a></li>
+        <li><a href="https://open.spotify.com/user/" target="_blank"><img src="logos/spotify.svg" alt="Spotify"></a></li>
+      </ul>
+    </section>
+
+    <!-- Support/Donation Platforms -->
+    <section id="support">
+      <h3>Support</h3>
+      <ul>
+        <li><a href="https://www.buymeacoffee.com/lakhindarpal" target="_blank"><img src="logos/buy-me-a-coffee.svg" alt="Buy Me a Coffee"></a></li>
+        <li><a href="https://www.ko-fi.com/lakhindarpal" target="_blank"><img src="logos/ko-fi.svg" alt="Ko-fi"></a></li>
+        <li><a href="https://patreon.com/LakhindarPal" target="_blank"><img src="logos/patreon.svg" alt="Patreon"></a></li>
+        <li><a href="https://liberapay.com/LakhindarPal" target="_blank"><img src="logos/liberapay.svg" alt="Liberapay"></a></li>
+      </ul>
+    </section>
+
   </main>
-  <hr>
+
   <footer>
-    Made with ♥️ by @Lakhindar.
+    <p>&copy; 2024 - All rights reserved @Lakhindar.</p>
   </footer>
+
 </body>
 
 </html>

@@ -1,0 +1,118 @@
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', Ubuntu, Roboto, sans-serif;
+  background-color: #9480ff;
+  background: fixed linear-gradient(0deg, #d7f5ef, #9480ff);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+header a {
+  text-decoration: none;
+  display: block;
+  border-radius: 8px;
+  border: 1px solid #000;
+  width: 50%;
+  margin: 10px auto;
+  padding: 10px;
+  text-align: center;
+}
+
+header a span {
+  font-weight: bold;
+}
+
+header {
+  border: 1px solid #000;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+header img {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  margin-top: 20px;
+  animation: floatAnimation 3s infinite;
+}
+
+@keyframes floatAnimation {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+
+h1 {
+  background: linear-gradient(to right, #ff5555, #5555ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+header p {
+  font-weight: bold;
+  color: #fff;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section {
+  flex: 1;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #000;
+}
+
+h3 {
+  /**/
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+ul:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2)
+}
+
+li {
+  margin: 10px;
+}
+
+li a {
+  text-decoration: none;
+}
+
+li img {
+  height: 32px;
+  border-radius: 2px;
+  transition: transform 0.3s ease-in-out;
+}
+
+li img:hover {
+  transform: scale(1.2);
+}
+
+footer {
+  /**/
+  font-size: small;
+}
