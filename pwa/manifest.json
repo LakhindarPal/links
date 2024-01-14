@@ -1,21 +1,34 @@
 {
-  "name": "Lakhindar Pal",
-  "short_name": "LP",
-  "description": "Explore the links to connect with Lakhindar Pal",
-  "version": "2.0.0",
+  "name": "Lakhindar Pal - Link Tree",
+  "short_name": "LP Links",
+  "description": "Dive into my personalized link tree — an effortless gateway to unravel the layers of my online presence with just one click.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#3498db",
   "icons": [
     {
-      "src": "../icons/android-chrome-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "maskable"
+      "src": "../icons/android-icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png"
     },
     {
-      "src": "../icons/android-chrome-512x512.png",
+      "src": "../icons/android-icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "../icons/android-icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "../icons/android-icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "../icons/android-icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"

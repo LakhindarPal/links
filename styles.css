@@ -39,7 +39,7 @@ header a span {
 header img {
   border-radius: 50%;
   height: 200px;
-  width: 200px;
+  width: auto;
   margin-top: 20px;
   animation: floatAnimation 3s infinite;
 }
@@ -128,6 +128,7 @@ li a {
 
 li img {
   height: 32px;
+  width: auto;
   border-radius: 2px;
   transition: transform 0.3s ease-in-out;
 }
