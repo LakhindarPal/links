@@ -1,6 +1,21 @@
+:root {
+  --bg-grad-one: #d7f5ef;
+  --bg-grad-two: #9480ff;
+  --primary-color: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-grad-one: #a2d5c8;
+    --bg-grad-two: #6a5bc9;
+    --primary-color: #ffffff;
+  }
+}
+
 body {
   font-family: system-ui, -apple-system, 'Segoe UI', Ubuntu, Roboto, sans-serif;
-  background: fixed linear-gradient(0deg, #d7f5ef, #9480ff);
+  background: fixed linear-gradient(0deg, var(--bg-grad-one), var(--bg-grad-two));
+  color: var(--primary-color);
   text-align: center;
   box-sizing: border-box;
   margin: 0;
@@ -15,7 +30,7 @@ select,
 section {
   margin: 10px;
   padding: 10px;
-  border: 1px solid #000;
+  border: 1px solid #000000;
   border-radius: 8px;
 }
 
@@ -65,7 +80,6 @@ h1 {
 
 header p {
   font-weight: bold;
-  color: #fff;
 }
 
 input {
@@ -89,7 +103,7 @@ input:focus,
 select:focus,
 input:active,
 select:active {
-  border-color: dodgerblue;
+  border-color: royalblue;
 }
 
 main {
